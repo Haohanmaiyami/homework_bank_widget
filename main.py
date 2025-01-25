@@ -10,4 +10,4 @@ if __name__ == "__main__":
     print(mask_account_card("Счет 73654108430135874305"))
     date_input = "2018-07-11T02:26:18.671407"
     formatted_date = get_date(date_input)
-    print(formatted_date)  # Ожидаемый результат: "11.03.2024"
+    print(formatted_date)  # Ожидаемый результат: "11.07.2018"
