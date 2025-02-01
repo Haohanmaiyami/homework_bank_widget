@@ -1,5 +1,6 @@
 def filter_by_state(transactions: list[dict], state: str = "EXECUTED") -> list[dict]:
-    return [t for t in transactions if t["state"] == state]
+    """ Функция фильтрует транзакции"""
+    return [transaction for transaction in transactions if transaction["state"] == state]
 
 if __name__ == '__main__':
     transactions = [
