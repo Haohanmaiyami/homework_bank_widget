@@ -1,8 +1,7 @@
 from src.masks import get_mask_account, get_mask_card_number
+from src.processing import filter_by_state, sort_by_date
 from src.widget import mask_account_card  # Импорт из src/widget.py
 from src.widget import get_date
-from src.processing import filter_by_state, sort_by_date
-
 
 if __name__ == '__main__':
     transactions = [
@@ -25,7 +24,7 @@ if __name__ == "__main__":
     date_input = "2018-07-11T02:26:18.671407"
     formatted_date = get_date(date_input)
     print(formatted_date)  # Ожидаемый результат: "11.07.2018"
-    print(filter_by_state(transactions,  "EXECUTED"))
-    print(filter_by_state(transactions,  "CANCELED"))
+    print(filter_by_state(transactions, "EXECUTED"))
+    print(filter_by_state(transactions, "CANCELED"))
     print("Сортировка по убыванию:", sorted_desc)
     print("Сортировка по возрастанию:", sorted_asc)
