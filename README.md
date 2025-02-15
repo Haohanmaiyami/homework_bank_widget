@@ -3,10 +3,10 @@
 ## Project description 
 Project designed for data processing and 
 includes masking info regarding personal data,
-filtering and sorting various functions. 
+filtering, generators and sorting various functions. 
 tests have also been added. 
 The pytest library is used to test the project. 
-The tests (all tests in the folder **tests**) cover key functions of all modules, including masks, widget, and processing.
+The tests (all tests in the folder **tests**) cover key functions of all modules, including masks, widget, generators and processing.
 The project is 
 developed using GitFlow and hosted on GitHub 
 for collaboration. 
