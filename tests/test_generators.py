@@ -69,3 +69,15 @@ def test_card_number_generator():
 def test_card_number_generator_format():
     card = next(card_number_generator(1234, 1234))
     assert card == "0000 0000 0000 1234"
+
+@pytest.mark.parametrize(
+    "start, stop, expected_cards",
+    [
+        (1, 3, ["0000 0000 0000 0001", "0000 0000 0000 0002", "0000 0000 0000 0003"]),
+        (1234, 1234, ["0000 0000 0000 1234"]),
+        (9999, 10000, ["0000 0000 0000 9999", "0000 0000 0001 0000"]),
+    ]
+)
+def test_card_number_generator(start, stop, expected_cards):
+    generated_cards = list(card_number_generator(start, stop))
+    assert generated_cards == expected_cards
