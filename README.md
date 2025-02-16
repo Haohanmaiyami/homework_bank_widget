@@ -3,10 +3,10 @@
 ## Project description 
 Project designed for data processing and 
 includes masking info regarding personal data,
-filtering and sorting various functions. 
-tests have also been added. 
+filtering, generators and sorting various functions. 
+Tests have also been added. 
 The pytest library is used to test the project. 
-The tests (all tests in the folder **tests**) cover key functions of all modules, including masks, widget, and processing.
+The tests (all tests in the folder **tests**) cover key functions of all modules, including masks, widget, generators and processing.
 The project is 
 developed using GitFlow and hosted on GitHub 
 for collaboration. 
@@ -23,10 +23,18 @@ For testing just use command ```pytest```
 The tests use fixtures **(conftest.py)** to generate test data.
 Parameterization is used to test different inputs without duplicating tests.
 
-### +
+
+### Generators info
+1. Filter_by_currency function - *takes a list of dictionaries as input and returns an iterator* -> check examples in main.py
+2. transaction_descriptions function - *takes a list of dictionaries as input and uses
+yield
+to generate values for the query* -> check examples in main.py
+3. card_number_generator function - *takes start and stop values as arguments* -> check examples in main.py
+
+
+### **********
 
 1. Test coverage is more than 80%
-2. 
 
 ### Documentation
 Links:
